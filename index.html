@@ -6,19 +6,20 @@
     <title>Portal de prácticas - Salta</title>
 </head>
 <body>
+    <h1>Portal de prácticas</h1>
     <ul style=”list-style-type:none”>
-        <li><a href="Institución">Institución</a></li>
-        <li><a href="Plan de estudios">Plan de estudios</a></li>
-        <li><a href="Multimedia">Multimedia</a></li>
-        <li><a href="Registro">Registro</a></li>
+        <li><a href="#Institucion">Institución</a></li>
+        <li><a href="#Plan de estudios">Plan de estudios</a></li>
+        <li><a href="#Multimedia">Multimedia</a></li>
+        <li><a href="#Registro">Registro</a></li>
     </ul>
-    <h1>Institución</h1>
+    <h2 id="Institucion">Institución</h2>
         <p>
         La institución se dedica a brindar servicios orientados a la organización y gestión
         de información, permitiendo optimizar procesos administrativos y mejorar la toma de decisiones.
         </p>
 
-        <h2>Importancia del Análisis de Sistemas</h2>
+        <h3>Importancia del Análisis de Sistemas</h3>
         <p>
         El <strong>Análisis de Sistemas</strong> permite identificar problemas, necesidades y oportunidades
         de mejora dentro de una organización. Gracias a este proceso, es posible desarrollar
@@ -39,7 +40,7 @@
         un sistema. También es importante la <strong>planificación</strong> y el
         <em>diseño estructurado</em> para garantizar un funcionamiento correcto.
         </p>
-    <h2>Tecnologías y Lenguajes</h2>
+        <h3>Tecnologías y Lenguajes</h3>
         <dl>
             <dt><strong>HTML</strong></dt>
             <dd>
@@ -59,7 +60,7 @@
                 a los sitios web, como validaciones, animaciones y manejo de eventos.
             </dd>
         </dl>
-        <h2>Plan de estudios</h2>
+    <h2 id="Plan de estudios">Plan de estudios</h2>
         <table caption="Plan de estudios" border="1">
             <thead>
                 <th>Materia</th>
@@ -110,6 +111,7 @@
             </tr>
         </tbody>
         </table>
+        <h3>Pasos para la inscripción a las prácticas</h3>
         <ol reversed>
             <li>Completar el formulario de inscripción.</li>
             <li>Presentar la documentación personal requerida.</li>
@@ -118,7 +120,7 @@
             <li>Confirmar la inscripción mediante correo institucional.</li>
         </ol>
 
-    <h2>Multimedia</h2>
+    <h2 id="Multimedia">Multimedia</h2>
         <img src="/assets/img/logo.png" alt="logo del instituto" width="100px" height="auto" loading="lazy">
         <video controls muted poster="/assets/img/portada.jpg" width="400px" height="250px">
             <source src="/assets/video/video.mp4" type="video/mp4">
@@ -129,7 +131,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14488.19742332821!2d-65.41870803600841!3d-24.793763420308906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc30328dc7e1d%3A0x7989494c40bfd21!2sInstituto%20Superior%20del%20Milagro!5e0!3m2!1sen!2sar!4v1779396716114!5m2!1sen!2sar" 
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
-    <h2>Registro</h2>
+    <h2 id="Registro">Registro</h2>
         <p>Instituto Superior del Milagro N° 8207</p>
         <p>Análisis de Sistemas</p>
         <p>Ciclo Lectivo 2026</p>
@@ -144,7 +146,7 @@
             </p>
             <p>
                 <label for="dni">DNI:</label>
-                <input type="number" id="dni" name="dni" maxlength="8">                
+                <input type="number" id="dni" name="dni" maxlength="9">                
             </p>
             <p>
                 <label for="email">Correo electrónico:</label>
@@ -161,37 +163,23 @@
             </p>
             <p>
                 <p>Sede:</p>
-                <label for="sede-central">
-                    <input type="radio" id="sede-central" name="sede" value="central">
-                    Central
-                </label>
-                <label for="sede-norte">
-                    <input type="radio" id="sede-norte" name="sede" value="norte">
-                    Norte
-                </label>
-                <label for="sede-sur">
-                    <input type="radio" id="sede-sur" name="sede" value="sur">
-                    Sur
-                </label>   
+                <label for="sede-central">Central</label>
+                <input type="radio" id="sede-central" name="sede" value="central">   
+                <label for="sede-norte">Norte</label>
+                <input type="radio" id="sede-norte" name="sede" value="norte">
+                <label for="sede-sur">Sur</label>  
+                <input type="radio" id="sede-sur" name="sede" value="sur"> 
             </p>
             <p>
                 <p>Tecnologías de interés:</p>
-                <label for="tech-html">
-                    <input type="checkbox" id="tech-html" name="tecnologias" value="html" checked>
-                    HTML
-                </label>
-                <label for="tech-css">
-                    <input type="checkbox" id="tech-css" name="tecnologias" value="css">
-                    CSS
-                </label>
-                <label for="tech-js">
-                    <input type="checkbox" id="tech-js" name="tecnologias" value="javascript">
-                    JavaScript
-                </label>
-                <label for="tech-bdd">
-                    <input type="checkbox" id="tech-bdd" name="tecnologias" value="bdd">
-                    Bases de datos
-                </label>
+                <label for="tecnologia-html">HTML</label>
+                <input type="checkbox" id="tecnologia-html" name="tecnologias" value="html" checked>
+                <label for="tecnologia-css">CSS</label>
+                <input type="checkbox" id="tecnologia-css" name="tecnologias" value="css">
+                <label for="tecnologia-js">JavaScript</label>
+                <input type="checkbox" id="tecnologia-js" name="tecnologias" value="javascript">
+                <label for="tecnologia-db">Bases de datos</label>
+                <input type="checkbox" id="tecnologia-db" name="tecnologias" value="bdd">
             </p>
             <p>
                 <label for="comentarios">Comentarios adicionales:</label>
